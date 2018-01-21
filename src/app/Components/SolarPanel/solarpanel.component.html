@@ -1,0 +1,11 @@
+<div *ngIf="SolarPanelData">
+  <div>
+    huidige productie: {{SolarPanelData.CurrentProduction}}
+  </div>
+  <div>productie tot nu toe: {{SolarPanelData.DayProduction}}
+  </div>
+
+  <div>totale productie: {{SolarPanelData.TotalProduction}}</div>
+
+  {{isRunning ? 'Meter is actief' : 'meter staat uit.'}}
+</div>

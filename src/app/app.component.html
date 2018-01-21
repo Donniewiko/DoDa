@@ -1,0 +1,41 @@
+<div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px">
+  <mat-card class="primary" fxFlex="50">
+    <mat-card-header>
+      <mat-card-title class="primary">Temperatuur</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <temperature [idx]="2"></temperature>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="primary" fxFlex="50">
+    <mat-card-header>
+      <mat-card-title>Zonne-energie</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <solarpanel></solarpanel>
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="primary" fxFlex="50">
+    <mat-card-header>
+      <mat-card-title>Huidig verbruik</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <powerusage [idx]="3"></powerusage>
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="primary" fxFlex="50">
+    <mat-card-header>
+      <mat-card-title>Vuil container</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <garbage></garbage>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+<div fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px" style="height:360px">
+  
+    <iframe src="http://192.168.1.10:8888/sources/1/dashboards/1?present=true" fxFlexFill  frameborder="0"></iframe>
+  
+</div>
